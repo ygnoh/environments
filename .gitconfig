@@ -1,0 +1,26 @@
+[user]
+	name = yonggoonoh
+	email = nohyg90@gmail.com
+[push]
+	default = matching
+[alias]
+	a = add . 
+	c = commit -am
+	b = branch
+	l = log --oneline --decorate --graph -15
+	s = status
+	co = checkout
+	re = rebase -i
+	rl = reflog
+[color "status"]
+    added = yellow
+	changed = green
+	untracked = cyan
+[core]
+	pager = cat
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
